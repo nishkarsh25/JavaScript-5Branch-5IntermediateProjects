@@ -40,3 +40,5 @@ categoryBtns.forEach(btn=>{
 })
 
 filterProduct();
+
+//Additional info in last commit
