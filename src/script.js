@@ -65,3 +65,16 @@ function initTyping(){
         input.value='';
     }
 }
+
+function initTime(){
+    if(timeLeft>0){
+        timeLeft--;
+        time.innerText = timeLeft;
+        let wpmVal = Math.round(((charIndex-mistake)/5)/(maxTime - timeLeft)*60);
+        wpm.innerText = wpmVal;
+
+    }
+    else{
+        clearInterval(timer);
+    }
+}
