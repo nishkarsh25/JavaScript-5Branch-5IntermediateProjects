@@ -21,3 +21,14 @@ function filterProduct(){
         }
     })
 }
+
+function setCategory(e){
+    categoryBtns.forEach(btn=>{
+        btn.classList.add("bg-blue-500");
+        btn.classList.remove("bg-red-500"); // Remove red background from all buttons
+    });
+    e.target.classList.remove("bg-blue-500");
+    e.target.classList.add("bg-red-500"); // Add red background to the clicked button
+    filterProduct();
+   
+}
