@@ -31,3 +31,37 @@ function loadParagraph(){
      typingText.addEventListener("click",()=>{
         input.focus()})
 }
+
+
+//Handle user input
+function initTyping(){
+    const char = typingText.querySelectorAll('span');
+    const typedChar = input.value.charAt(charIndex);
+    if(charIndex < char.length && timeLeft >0){
+
+        if(!isTyping)
+        {
+            timer = setInterval(initTime,1000);
+            isTyping = true
+        }
+
+        if(char[charIndex].innerText === typedChar){
+            char[charIndex].classList.add('text-green-500');
+            console.log("correct");
+        }
+        else{
+            mistake++ ;
+            console.log("Mistake count:", mistake);
+            char[charIndex].classList.add('text-red-500', 'bg-red-200', 'ring-red-500');
+            console.log("incorrect");
+        }
+        charIndex++;
+        char[charIndex].classList.add('text-yellow-500', 'font-bold');
+        mistakes.innerText = mistake;
+        cpm.innerText = charIndex - mistake;
+    }
+    else{
+        clearInterval(timer);
+        input.value='';
+    }
+}
