@@ -101,3 +101,5 @@ input.addEventListener("keydown", (event) => {
     }
   });
 
+loadParagraph()
+
