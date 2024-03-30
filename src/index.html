@@ -8,6 +8,18 @@
     <title>Filter Product</title>
 </head>
 <body>
-    
+    <div class="flex justify-between items-center mb-4">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search.." class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500">
+            <button id="search-btn" class="ml-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md focus:outline-none">Search</button>
+        </div>
+        <div class="category-container flex">
+            <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="all">All Products</div>
+            <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="electronics">Electronics</div>
+            <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="clothing">Clothing</div>
+            <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="home">Home & Garden</div>
+        </div>
+        
+    </div>
 </body>
 </html>
