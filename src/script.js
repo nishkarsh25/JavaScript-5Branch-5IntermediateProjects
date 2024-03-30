@@ -92,3 +92,12 @@ function reset(){
     cpm.innerText = 0;
     mistakes.innerText = 0;
 }
+
+input.addEventListener("input",initTyping);
+btn.addEventListener("click",reset);
+input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        reset();
+    }
+  });
+
