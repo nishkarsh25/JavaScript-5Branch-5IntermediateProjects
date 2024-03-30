@@ -78,3 +78,17 @@ function initTime(){
         clearInterval(timer);
     }
 }
+
+function reset(){
+    loadParagraph();
+    clearInterval(timer);
+    timeLeft = maxTime;
+    time.innerText = timeLeft;
+    input.value = '';
+    charIndex = 0;
+    mistake = 0;
+    isTyping = false;
+    wpm.innerText = 0;
+    cpm.innerText = 0;
+    mistakes.innerText = 0;
+}
