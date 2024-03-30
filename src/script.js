@@ -47,3 +47,28 @@ const validateInputs = () => {
         setSuccess(cPassword);
     }
 };
+
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    element.classList.remove('border-purple-500', 'ring', 'ring-red-500', 'border-green-500', 'ring-green-500');
+    element.classList.add('border-red-500', 'ring-red-500');
+
+    // // Set new styles directly
+    // element.style.borderColor = 'red';
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    element.classList.remove('border-purple-500', 'ring', 'ring-red-500', 'border-green-500', 'ring-green-500');
+    element.classList.add('border-green-500', 'ring-green-500');
+
+    // // Set new styles directly
+    // element.style.borderColor = 'green';
+};
