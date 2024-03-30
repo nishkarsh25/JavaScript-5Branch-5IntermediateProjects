@@ -10,3 +10,11 @@ dayNight.addEventListener("click", () => {
     day.classList.toggle("hidden");
     night.classList.toggle("hidden");
 });
+
+let typingEffect = new Typed("#text",{
+    strings:["DropXOut","Youtuber","Coder"],
+    loop:true,
+    typeSpeed:100,
+    backSpeed:50,
+    backDelay:1000
+})
