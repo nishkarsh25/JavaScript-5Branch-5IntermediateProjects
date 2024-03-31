@@ -3,43 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="./output.css" rel="stylesheet"> -->
-    <title>Typing Game</title>
-    <!-- Add Tailwind CSS CDN link -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Filter Product</title>
+    <style>
+        
+    </style>
 </head>
-<body class="bg-gradient-to-br from-yellow-300 to-orange-500 flex justify-center items-center h-screen">
-    <div class="wrapper bg-white p-8 rounded-lg shadow-md flex flex-col items-center justify-center">
-        <h1 class="text-3xl font-semibold text-center mb-4">Type without Backspace!</h1>
-        <input type="text" class="input-field  border border-gray-300 px-4 py-2 rounded-md mb-4 focus:outline-none focus:border-blue-500 placeholder-gray-500">
-        <div class="typing-text text-center border border-yellow-400 rounded-lg p-4 mb-6">
-            <p class="  text-gray-700 mb-6 ">
-                
-            </p>
-            <hr class="border border-yellow-300 my-6">
-            <div class="content">
-                <div class="result-details flex justify-around bg-gray-200 border border-red-500 p-4 rounded-lg">
-                    <div class="time flex items-center text-gray-700">
-                        <p class="mr-2">Time Left:</p>
-                        <span><b>60</b>s</span>
-                    </div>
-                    <div class="mistake flex items-center text-red-600">
-                        <p class="mr-2">Mistakes:</p>
-                        <span>0</span>
-                    </div>
-                    <div class="wpm flex items-center text-green-600">
-                        <p class="mr-2">WPM:</p>
-                        <span>0</span>
-                    </div>
-                    <div class="cpm flex items-center text-blue-600">
-                        <p class="mr-2">CPM:</p>
-                        <span>0</span>
-                    </div>
-                </div>
-                <button class="block mx-auto mt-6 px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105">Try Again</button>
+<body class="bg-gradient-to-br from-green-400 to-cyan-500 min-h-screen  container mx-auto py-8">
+    
+        <div class="flex justify-between items-center mb-4">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search.." class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500">
+                <button id="search-btn" class="ml-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md focus:outline-none">Search</button>
+            </div>
+            <div class="category-container flex">
+                <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="all">All Products</div>
+                <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="electronics">Electronics</div>
+                <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="clothing">Clothing</div>
+                <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="home">Home & Garden</div>
             </div>
         </div>
-    </div>
+        
+        <div id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div class="product-item border border-gray-300 p-4 flex flex-col square bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-lg" data-category="electronics">
+                <h3 class="font-bold text-purple-800 text-lg mb-2">Smartphone</h3>
+                <p class="text-gray-700 text-sm">A powerful smartphone with advanced features.</p>
+            </div>
+            <div class="product-item border border-gray-300 p-4 flex flex-col square bg-gradient-to-br from-pink-400 to-purple-500 rounded-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-lg" data-category="clothing">
+                <h3 class="font-bold text-purple-800 text-lg mb-2">T-shirt</h3>
+                <p class="text-gray-700 text-sm">Comfortable and stylish t-shirt for everyday wear.</p>
+            </div>
+            <div class="product-item border border-gray-300 p-4 flex flex-col square bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-lg" data-category="home">
+                <h3 class="font-bold text-purple-800 text-lg mb-2">Coffee-Maker</h3>
+                <p class="text-gray-700 text-sm">Brew delicious coffee with our advanced coffee maker.</p>
+            </div>
+            <div class="product-item border border-gray-300 p-4 flex flex-col square bg-gradient-to-br from-pink-400 to-purple-500 rounded-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-lg" data-category="electronics">
+                <h3 class="font-bold text-purple-800 text-lg mb-2">Laptop</h3>
+                <p class="text-gray-700 text-sm">High-performance laptop for work and entertainment.</p>
+            </div>
+            <div class="product-item border border-gray-300 p-4 flex flex-col square bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-lg" data-category="clothing">
+                <h3 class="font-bold text-purple-800 text-lg mb-2">Hoodie</h3>
+                <p class="text-gray-700 text-sm">Stay warm and stylish with our trendy hoodies.</p>
+            </div>
+        </div>
+    
+
     <script src="script.js"></script>
+
 </body>
 </html>
