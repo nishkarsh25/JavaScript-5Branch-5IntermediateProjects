@@ -4,50 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Project</title>
-    <!-- Add Tailwind CSS CDN -->
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+    <title>Form Validation</title>
+    <!-- Add Tailwind CSS CDN link -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <section class="banner h-screen">
-        <header class="bg-gray-900 text-white py-4 px-8 flex justify-between items-center">
-            <a href="#" class="logo text-2xl font-bold tracking-wider text-yellow-300">Drop<span class="text-yellow-100">X</span>Out</a>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:text-gray-400">Home</a></li>
-                <li><a href="#" class="hover:text-gray-400">About</a></li>
-                <li><a href="#" class="hover:text-gray-400">Work</a></li>
-                <li><a href="#" class="hover:text-gray-400">Contact</a></li>
-            </ul>
-        </header>
-        
-        <div class="content flex flex-col items-center justify-center text-center mt-16 py-20 px-8">
-            <h2 class="text-7xl font-bold mb-12">I am <span id="text" class="text-yellow-300"></span></h2>
-            <p class="text-3xl mb-12">Let's Break the Matrix</p>
-            <div class="flex space-x-8">
-                <button class="join-btn bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-semibold py-4 px-12 rounded-full transition duration-300">Join Us</button>
-                <button class="chat-btn bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-semibold py-4 px-12 rounded-full transition duration-300">Let's Chat</button>
+<body class="bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify center min-h-screen">
+    <div class="container mx-auto max-w-md p-8 bg-white rounded-lg shadow-md">
+        <form class="form">
+            <h1 class="text-3xl font-semibold mb-8 text-center text-gray-800">Registration Form</h1>
+            <div class="form-control mb-6">
+                <label for="username" class="block text-gray-700 font-semibold mb-2 cursor-pointer">Username:</label>
+                <input type="text" id="username" class="input-field border border-purple-500 px-3 py-2 rounded-md focus:border-pink-500 focus:outline-none">
+                <p class="error"></p>
             </div>
-        </div>
-        
-        
-
-        
-        <div class="fixed bottom-10 left-0 w-full flex justify-center items-center mt-8">
-            <div class="dayNight flex justify-center items-center space-x-4">
-                <ion-icon name="moon-outline" class="night text-gray-400 text-4xl hidden"></ion-icon>
-                <ion-icon name="sunny-outline" class="day text-yellow-400 text-4xl"></ion-icon>
+            <div class="form-control mb-6">
+                <label for="email" class="block text-gray-700 font-semibold mb-2 cursor-pointer">Email:</label>
+                <input type="email" id="email" class="input-field border border-purple-500 px-3 py-2 rounded-md focus:border-pink-500 focus:outline-none">
+                <p class="error"></p>
             </div>
-        </div>
-        
-        
-        
-        
-
-    </section>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-     <script src="script.js"></script>
+            <div class="form-control mb-6">
+                <label for="password" class="block text-gray-700 font-semibold mb-2 cursor-pointer">Password:</label>
+                <input type="password" id="password" class="input-field border border-purple-500 px-3 py-2 rounded-md focus:border-pink-500 focus:outline-none">
+                <p class="error"></p>
+            </div>
+            <div class="form-control mb-6">
+                <label for="confirm-password" class="block text-gray-700 font-semibold mb-2 cursor-pointer">Confirm Password:</label>
+                <input type="password" id="confirm-password" class="input-field border border-purple-500 px-3 py-2 rounded-md focus:border-pink-500 focus:outline-none">
+                <p class="error"></p>
+            </div>
+            <button id="btn" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
