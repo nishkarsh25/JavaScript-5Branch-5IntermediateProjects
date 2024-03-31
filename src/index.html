@@ -2,53 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <!-- Add Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Filter Product</title>
-    <style>
-        
-    </style>
 </head>
-<body class="bg-gradient-to-br from-green-400 to-cyan-500 min-h-screen  container mx-auto py-8">
-    
-        <div class="flex justify-between items-center mb-4">
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="Search.." class="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500">
-                <button id="search-btn" class="ml-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md focus:outline-none">Search</button>
-            </div>
-            <div class="category-container flex">
-                <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="all">All Products</div>
-                <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="electronics">Electronics</div>
-                <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="clothing">Clothing</div>
-                <div class="category-btn px-4 py-2 text-white ml-2 rounded-md bg-blue-500" data-category="home">Home & Garden</div>
+<body>
+    <section class="banner h-screen">
+        <header class="bg-gray-900 text-white py-4 px-8 flex justify-between items-center">
+            <a href="#" class="logo text-2xl font-bold tracking-wider text-yellow-300">Drop<span class="text-yellow-100">X</span>Out</a>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#" class="hover:text-gray-400">About</a></li>
+                <li><a href="#" class="hover:text-gray-400">Work</a></li>
+                <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </header>
+        
+        <div class="content flex flex-col items-center justify-center text-center mt-16 py-20 px-8">
+            <h2 class="text-7xl font-bold mb-12">I am <span id="text" class="text-yellow-300"></span></h2>
+            <p class="text-3xl mb-12">Let's Break the Matrix</p>
+            <div class="flex space-x-8">
+                <button class="join-btn bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-semibold py-4 px-12 rounded-full transition duration-300">Join Us</button>
+                <button class="chat-btn bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-semibold py-4 px-12 rounded-full transition duration-300">Let's Chat</button>
             </div>
         </div>
         
-        <div id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <div class="product-item border border-gray-300 p-4 flex flex-col square bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-lg" data-category="electronics">
-                <h3 class="font-bold text-purple-800 text-lg mb-2">Smartphone</h3>
-                <p class="text-gray-700 text-sm">A powerful smartphone with advanced features.</p>
-            </div>
-            <div class="product-item border border-gray-300 p-4 flex flex-col square bg-gradient-to-br from-pink-400 to-purple-500 rounded-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-lg" data-category="clothing">
-                <h3 class="font-bold text-purple-800 text-lg mb-2">T-shirt</h3>
-                <p class="text-gray-700 text-sm">Comfortable and stylish t-shirt for everyday wear.</p>
-            </div>
-            <div class="product-item border border-gray-300 p-4 flex flex-col square bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-lg" data-category="home">
-                <h3 class="font-bold text-purple-800 text-lg mb-2">Coffee-Maker</h3>
-                <p class="text-gray-700 text-sm">Brew delicious coffee with our advanced coffee maker.</p>
-            </div>
-            <div class="product-item border border-gray-300 p-4 flex flex-col square bg-gradient-to-br from-pink-400 to-purple-500 rounded-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-lg" data-category="electronics">
-                <h3 class="font-bold text-purple-800 text-lg mb-2">Laptop</h3>
-                <p class="text-gray-700 text-sm">High-performance laptop for work and entertainment.</p>
-            </div>
-            <div class="product-item border border-gray-300 p-4 flex flex-col square bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-lg" data-category="clothing">
-                <h3 class="font-bold text-purple-800 text-lg mb-2">Hoodie</h3>
-                <p class="text-gray-700 text-sm">Stay warm and stylish with our trendy hoodies.</p>
+        
+
+        
+        <div class="fixed bottom-10 left-0 w-full flex justify-center items-center mt-8">
+            <div class="dayNight flex justify-center items-center space-x-4">
+                <ion-icon name="moon-outline" class="night text-gray-400 text-4xl hidden"></ion-icon>
+                <ion-icon name="sunny-outline" class="day text-yellow-400 text-4xl"></ion-icon>
             </div>
         </div>
-    
+        
+        
+        
+        
 
-    <script src="script.js"></script>
+    </section>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+     <script src="script.js"></script>
 </body>
 </html>
