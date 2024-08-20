@@ -92,7 +92,7 @@ MyFormValidation project is made possible by the contributions and support of va
 
 - **Tailwind CSS Team:** For developing Tailwind CSS, a versatile CSS framework that simplifies web development and enhances user interfaces.
   
-- **Open Source Community:** For fostering collaboration, innovation, and the sharing of knowledge, which enriches projects like MyCalculatorApp and makes them accessible to all.
+- **Open Source Community:** For fostering collaboration, innovation, and the sharing of knowledge, which enriches projects like My Form Validation and makes them accessible to all.
 
 ## Credits
 
