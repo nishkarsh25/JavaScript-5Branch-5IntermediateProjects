@@ -15,6 +15,10 @@ Welcome to the Filter Product project! This project provides a user-friendly int
 ### 3. Responsive Design
 - The interface is designed to be responsive, ensuring optimal viewing and interaction across various devices and screen sizes.
 
+## Live Demo
+
+You can try out the live demo of the app [here](https://javascript-5branch-5intermediateprojects-vt6y.onrender.com).
+
 ## Screenshots
 
 <!-- Include screenshots or GIFs of your app here to give users a visual representation of what your app looks like. -->
