@@ -20,6 +20,10 @@ Welcome to the Typing Game Without Backspace project! This project is a web-base
 - **Time Limit**: With a time limit of 60 seconds, players are challenged to type as much of the paragraph as possible within the given time frame.
 - **Responsive Design**: The game interface is designed to be responsive, ensuring an optimal experience across various devices and screen sizes.
 
+## Live Demo
+
+You can try out the live demo of the app [here](https://javascript-5branch-5intermediateprojects-ocpk.onrender.com).
+
 ## Screenshots
 
 <!-- Include screenshots or GIFs of your app here to give users a visual representation of what your app looks like. -->
