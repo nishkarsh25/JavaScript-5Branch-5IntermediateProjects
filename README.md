@@ -16,6 +16,10 @@ Welcome to the Portfolio Project! This project showcases a dynamic and visually 
 - Users have the option to toggle between light and dark themes using the day-night switcher located at the bottom of the page.
 - The interface transforms dynamically to reflect the selected theme, providing visual variety and customization.
 
+## Live Demo
+
+You can try out the live demo of the app [here](https://javascript-5branch-5intermediateprojects-aohw.onrender.com).
+
 ## Screenshots
 
 <!-- Include screenshots or GIFs of your app here to give users a visual representation of what your app looks like. -->
