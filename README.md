@@ -25,6 +25,10 @@ The Weather App offers a user-friendly interface where users can easily input th
 ### 4. Responsive Design
    - **Optimal Viewing**: Designed to be responsive, ensuring that the app is accessible and functional across various devices and screen sizes.
 
+## Live Demo
+
+You can try out the live demo of the app [here](https://javascript-5branch-5intermediateprojects.onrender.com).
+
 ## Screenshots
 
 <!-- Include screenshots or GIFs of your app here to give users a visual representation of what your app looks like. -->
